@@ -1,20 +1,90 @@
 # dfinity_reactJs_reactRouter_babel
 
-Welcome to your new dfinity_reactJs_reactRouter_babel project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+A template that includes Dfinity, ReactJS, React-Router with the possibility of launching a local server.
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+## Prerequisites
 
-To learn more before you start working with dfinity_reactJs_reactRouter_babel, see the following documentation available online:
+* [Dfinity sdk](https://dfinity.org/developers)
+* npm
 
-- [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
-- [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
-- [Motoko Programming Language Guide](https://sdk.dfinity.org/docs/language-guide/motoko.html)
-- [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
+## Recipe to create the project by hand
 
-If you want to start working on your project right away, you might want to try the following commands:
+### Create a projet using dfx
 
-```bash
-cd dfinity_reactJs_reactRouter_babel/
-dfx help
-dfx config --help
+`dfx new <project name>`
+
+### In the project folder
+
+Install webpack and dev server
+
+`npm i webpack webpack-cli webpack-dev-server --save-dev`
+
+Install loaders 
+
+`npm i css-loader style-loader html-webpack-plugin --save-dev`
+
+`npm i @babel/core babel-loader @babel/preset-env @babel/preset-react @babel/plugin-transform-runtime --save-dev`
+
+Install react
+
+`npm i react react-dom react-router-dom`
+
+## Modifiy files
+
+**package.json** add command _start_
+
+
+```javascript
+"scripts": {
+    "build": "webpack",
+    "start": "webpack serve --mode development --open 'firefox'"
+  },
 ```
+
+**webpack.config.js** add module
+
+
+```javascript
+module: {
+      rules: [
+        { 
+          test: /\.css$/,
+          use: ['style-loader','css-loader']
+        },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-transform-runtime']
+            }
+          }
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+        },
+      ]
+    },
+```
+
+Create **babel.config.json**
+`touch babel.config.json`
+
+**babel.config.json** add content
+```javascript
+{
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+}
+```
+
+Add or update front-end files in _./src/\<project name\>_assets/src/_
+
+Take care of *greeting.jsx* by updating _import_ and _Actor.createActor_
+
+Use command `dfx deploy` or `npm start`
