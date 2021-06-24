@@ -29,7 +29,7 @@ Install react
 
 `npm i react react-dom react-router-dom`
 
-## Modifiy files
+## Modify files
 
 **package.json** add command _start_
 
