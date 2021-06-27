@@ -1,5 +1,5 @@
 import React from "react";
-import Organisation from "./components/organisation";
+import Home from "./components/home";
 import Greeting from "./components/greeting";
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <Organisation name="Base Organisation" />
+          <Home name="Base Dfinity + ReactJs: " />
         </Route>
         <Route path="/greeting">
           <Greeting />

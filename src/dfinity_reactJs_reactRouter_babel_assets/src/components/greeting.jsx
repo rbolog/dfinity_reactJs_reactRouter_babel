@@ -1,18 +1,13 @@
 
-import { Actor, HttpAgent } from '@dfinity/agent';
-import { idlFactory as dfinity_reactJs_reactRouter_babel_idl, canisterId as dfinity_reactJs_reactRouter_babel_id } from 'dfx-generated/dfinity_reactJs_reactRouter_babel';
+
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/main.css';
 import logo from '../images/logo.png';
-
-const agent = new HttpAgent();
-const app = Actor.createActor(dfinity_reactJs_reactRouter_babel_idl, { agent, canisterId: dfinity_reactJs_reactRouter_babel_id });
+import { greet } from '../services/wrapper'
 
 async function doGreet(name) {
-    console.debug(name);
-    const greeting = await app.greet(name);
-    console.debug(greeting);
+    const greeting = await greet(name);
     document.getElementById("greeting").innerText = greeting;
   };
 
