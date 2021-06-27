@@ -102,3 +102,8 @@ Add or update front-end files in _./src/\<project name\>_assets/src/_
 Take care of *wrapper.js* by updating _import_ and _Actor.createActor_
 
 Use command `dfx deploy` or `npm start`
+
+# Alternatives [(read forum)](https://forum.dfinity.org/)
+
+* [Easiest way to get started with frontend. ...](https://forum.dfinity.org/t/easiest-way-to-get-started-with-frontend-templates-for-react-vue-svelte-based-on-vitejs/2589?u=rbolog)
+* [How do I connect a React front-end with a Canister](https://forum.dfinity.org/t/how-do-i-connect-a-react-front-end-with-a-canister/2301?u=rbolog)
