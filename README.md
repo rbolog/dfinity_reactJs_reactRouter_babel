@@ -85,13 +85,15 @@ Create **babel.config.json**
 
 ## Recipe to create the project using template
 
-- Rename _/src/**dfinity_reactJs_reactRouter_babel**_assets_ with your <project name\>
-- Rename _/src/**dfinity_reactJs_reactRouter_babel**/_ with your <project name\>
-- Update name and description in **package.json**
-- Update  by search _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
+1. Create and clone project from Github
+1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**__assets_ with your <project name\>
+1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**/_ with your <project name\>
+1. Update name and description in **package.json**
+1. Update  **dfx.json** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
 
 Command `npm install`
 
+Command `dfx deploy`
 
 ## Finally
 
