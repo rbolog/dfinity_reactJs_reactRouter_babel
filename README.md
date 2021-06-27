@@ -85,6 +85,7 @@ Create **babel.config.json**
 
 Add or update front-end files in _./src/\<project name\>_assets/src/_
 
-Take care of *greeting.jsx* by updating _import_ and _Actor.createActor_
+
+Take care of *wrapper.js* by updating _import_ and _Actor.createActor_
 
 Use command `dfx deploy` or `npm start`
