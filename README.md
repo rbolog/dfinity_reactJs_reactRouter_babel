@@ -83,8 +83,19 @@ Create **babel.config.json**
 }
 ```
 
-Add or update front-end files in _./src/\<project name\>_assets/src/_
+## Recipe to create the project using template
 
+- Rename _/src/**dfinity_reactJs_reactRouter_babel**_assets_ with your <project name\>
+- Rename _/src/**dfinity_reactJs_reactRouter_babel**/_ with your <project name\>
+- Update name and description in **package.json**
+- Update  by search _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
+
+Command `npm install`
+
+
+## Finally
+
+Add or update front-end files in _./src/\<project name\>_assets/src/_
 
 Take care of *wrapper.js* by updating _import_ and _Actor.createActor_
 
