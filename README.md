@@ -25,7 +25,7 @@ Install react
 
 `npm i react react-dom react-router-dom`
 
-## Modify files
+### Modify files
 
 **webpack.config.js** add module
 
@@ -67,6 +67,10 @@ Create **babel.config.json**
     ]
 }
 ```
+### copy source files
+
+Copy from repo. or adapt files in `/src/dfinity_reactJs_reactRouter_babel_assets` with reactjs.
+
 
 ## Recipe to create the project using template
 
