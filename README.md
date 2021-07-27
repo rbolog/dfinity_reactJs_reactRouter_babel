@@ -1,10 +1,10 @@
 # dfinity_reactJs_reactRouter_babel
 
-A template that includes Dfinity, ReactJS, React-Router with the possibility of launching a local server.
+A template that includes Dfinity, ReactJS, React-Router .
 
 ## Prerequisites
 
-* [Dfinity sdk](https://dfinity.org/developers)
+* [Dfinity sdk version 0.8.0](https://dfinity.org/developers)
 * npm
 
 ## Recipe to create the project by hand
@@ -14,10 +14,6 @@ A template that includes Dfinity, ReactJS, React-Router with the possibility of 
 `dfx new <project name>`
 
 ### In the project folder
-
-Install webpack and dev server
-
-`npm i webpack webpack-cli webpack-dev-server --save-dev`
 
 Install loaders 
 
@@ -30,16 +26,6 @@ Install react
 `npm i react react-dom react-router-dom`
 
 ## Modify files
-
-**package.json** add command _start_
-
-
-```javascript
-"scripts": {
-    "build": "webpack",
-    "start": "webpack serve --mode development --open 'firefox'"
-  },
-```
 
 **webpack.config.js** add module
 
