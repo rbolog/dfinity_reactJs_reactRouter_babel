@@ -1,13 +1,13 @@
 # dfinity_reactJs_reactRouter_babel
 
-A template that includes Dfinity, ReactJS, React-Router .
+A recipe,template that includes Dfinity, ReactJS, React-Router.
 
 ## Prerequisites
 
 * [Dfinity sdk version 0.8.0](https://dfinity.org/developers)
 * npm
 
-## Recipe to create the project by hand
+## Recipe to create the project by hand (best)
 
 ### Create a projet using dfx
 
@@ -28,7 +28,6 @@ Install react
 ## Modify files
 
 **webpack.config.js** add module
-
 
 ```javascript
 module: {
@@ -75,7 +74,8 @@ Create **babel.config.json**
 1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**__assets_ with your <project name\>
 1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**/_ with your <project name\>
 1. Update name and description in **package.json**
-1. Update  **dfx.json** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
+1. Update **dfx.json** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
+1. Update **webpack.config.js** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
 
 Command `npm install`
 
