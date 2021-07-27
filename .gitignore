@@ -13,4 +13,7 @@
 # frontend code
 node_modules/
 dist/
+src/declarations/
+
+
 **/*.original
