@@ -1,6 +1,4 @@
-import { dfinity_reactJs_reactRouter_babel } from "../../../declarations/dfinity_reactJs_reactRouter_babel";
-
-const app = dfinity_reactJs_reactRouter_babel;
+import { dfinity_reactJs_reactRouter_babel as app } from "../../../declarations/dfinity_reactJs_reactRouter_babel";
 
 export async function greet(name) {
     console.debug(name);
