@@ -4,7 +4,7 @@ A recipe,template that includes Dfinity, ReactJS, React-Router.
 
 ## Prerequisites
 
-* [Dfinity sdk version 0.8.0](https://dfinity.org/developers)
+* [Dfinity sdk version 0.8.1](https://dfinity.org/developers)
 * npm
 
 ## Recipe to create the project by hand (best)
