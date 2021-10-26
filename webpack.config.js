@@ -134,8 +134,15 @@ module.exports = {
         },
       },
     },
-    hot: true,
-    contentBase: path.resolve(__dirname, "./src/dfinity_reactJs_reactRouter_babel_assets"),
-    watchContentBase: true
+    static: {
+      directory: path.resolve(__dirname, "static"),
+      staticOptions: {},
+      publicPath: "./src/dfinity_reactJs_reactRouter_babel_assets",
+      serveIndex: true,
+      watch: true,
+    },
+    //hot: true,
+    //contentBase: path.resolve(__dirname, "./src/dfinity_reactJs_reactRouter_babel_assets"),
+    //watchContentBase: true
   },
 };

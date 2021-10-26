@@ -55,6 +55,33 @@ module: {
     },
 ```
 
+**webpack.config.js** update devServer if you update in package.json the webpack-dev-server to version 4 
+
+```javascript
+devServer: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:8000",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api": "/api",
+        },
+      },
+    },
+    static: {
+      directory: path.resolve(__dirname, "static"),
+      staticOptions: {},
+      publicPath: "./src/dfinity_reactJs_reactRouter_babel_assets",
+      serveIndex: true,
+      watch: true,
+    },
+    // Upgrade according https://github.com/webpack/webpack-dev-server/blob/master/migration-v4.md
+    //hot: true,
+    //contentBase: path.resolve(__dirname, "./src/dfinity_reactJs_reactRouter_babel_assets"),
+    //watchContentBase: true
+  },
+```
+
 Create **babel.config.json**
 `touch babel.config.json`
 
@@ -67,6 +94,13 @@ Create **babel.config.json**
     ]
 }
 ```
+
+update **package.json**
+
+`npm outdated`
+
+Modify accordingly.
+
 ### copy source files
 
 Copy from repo. or adapt files in `/src/dfinity_reactJs_reactRouter_babel_assets` with reactjs.
