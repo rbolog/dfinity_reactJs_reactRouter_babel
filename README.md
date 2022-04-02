@@ -4,7 +4,7 @@ A recipe,template that includes Dfinity, ReactJS, React-Router.
 
 ## Prerequisites
 
-* [Dfinity sdk version 0.9.2](https://smartcontracts.org/docs/quickstart/local-quickstart.html)
+* [Dfinity sdk version 0.9.3](https://smartcontracts.org/docs/quickstart/local-quickstart.html)
 * npm
 
 ## Recipe to create the project by hand (best)
