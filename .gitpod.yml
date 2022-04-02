@@ -1,0 +1,14 @@
+file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
+    - https://ipfs.io/ipfs/bafybeiczpm5sslepsjc57b6wpvsnkua3ezsmfzeu7luooc2b2wuc7gwjxi?dfinity-foundation.vscode-motoko-0.3.9.vsix
+ports:
+- port: 8000
+  onOpen: open-preview
+- port: 8080
+  onOpen: open-browser
+tasks:
+- command: npm install
+- command: dfx start
