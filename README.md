@@ -102,7 +102,7 @@ Use command `dfx deploy` or `npm start`
 
 # Try it!
 
-[![Open in Gitpod](https://gitpod.io/#https://github.com/rbolog/dfinity_reactJs_reactRouter_babel)
+[!Open in Gitpod](https://gitpod.io/#https://github.com/rbolog/dfinity_reactJs_reactRouter_babel)
 
 # Alternatives [(read forum)](https://forum.dfinity.org/)
 
