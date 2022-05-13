@@ -16,15 +16,15 @@
     "copy:types": "rsync -avr .dfx/$(echo ${DFX_NETWORK:-'**'})/canisters/** --exclude='assets/' --exclude='idl/' --exclude='*.wasm' --delete src/declarations"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/plugin-transform-runtime": "^7.17.0",
-    "@babel/preset-env": "^7.16.11",
+    "@babel/core": "^7.17.10",
+    "@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
-    "@dfinity/agent": "0.10.4",
-    "@dfinity/candid": "0.10.4",
-    "@dfinity/principal": "0.10.4",
+    "@dfinity/agent": "0.11.1",
+    "@dfinity/candid": "0.11.1",
+    "@dfinity/principal": "0.11.1",
     "assert": "2.0.0",
-    "babel-loader": "^8.2.4",
+    "babel-loader": "^8.2.5",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
@@ -35,9 +35,12 @@
     "style-loader": "^3.3.0",
     "terser-webpack-plugin": "5.3.1",
     "util": "0.12.4",
-    "webpack": "^5.71.0",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.4"
+    "webpack-dev-server": "^4.9.0"
+  },
+  "engines": {
+    "node": "^12 || ^14 || ^16 || ^18"
   },
   "browserslist": [
     "last 2 chrome version",
@@ -46,8 +49,8 @@
     "last 2 edge version"
   ],
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0"
   }
 }
