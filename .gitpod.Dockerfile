@@ -8,3 +8,4 @@ RUN apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && r
 USER gitpod
 RUN sh -c "$(curl -fsSL https://smartcontracts.org/install.sh)"
 RUN echo "export PATH=\"\$PATH:/home/gitpod/bin\"" >> /home/gitpod/.bashrc
+RUN dfx upgrade
