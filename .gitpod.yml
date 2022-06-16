@@ -12,4 +12,4 @@ ports:
   onOpen: open-preview
 tasks:
 - command: npm install
-- command: dfx start &
+- command: dfx start --background --clean
