@@ -106,6 +106,7 @@ Use command `dfx deploy` or `npm start`
 
 # Alternatives [(read forum)](https://forum.dfinity.org/)
 
+* [App skeleton including primereact and internet identity](https://gitlab.com/kurdy/dfx_skeleton)
 * [Easiest way to get started with frontend. ...](https://forum.dfinity.org/t/easiest-way-to-get-started-with-frontend-templates-for-react-vue-svelte-based-on-vitejs/2589?u=rbolog)
 * [How do I connect a React front-end with a Canister](https://forum.dfinity.org/t/how-do-i-connect-a-react-front-end-with-a-canister/2301?u=rbolog)
 * Dfinity doc. [Add front-end assets](https://sdk.dfinity.org/docs/developers-guide/webpack-config.html)
