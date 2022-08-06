@@ -76,7 +76,7 @@ Modify accordingly.
 
 ### copy source files
 
-Copy from repo. or adapt files in `/src/dfinity_reactJs_reactRouter_babel_assets` with reactjs.
+Copy from repo. or adapt files in `/src/dfinity_reactJs_reactRouter_babel_frontend` with reactjs.
 
 
 ## Recipe to create the project using template

@@ -1,19 +1,19 @@
 {
   "canisters": {
-    "dfinity_reactJs_reactRouter_babel": {
-      "main": "src/dfinity_reactJs_reactRouter_babel/main.mo",
+    "dfinity_reactJs_reactRouter_babel_backend": {
+      "main": "src/dfinity_reactJs_reactRouter_babel_backend/main.mo",
       "type": "motoko"
     },
-    "dfinity_reactJs_reactRouter_babel_assets": {
+    "dfinity_reactJs_reactRouter_babel_frontend": {
       "dependencies": [
-        "dfinity_reactJs_reactRouter_babel"
+        "dfinity_reactJs_reactRouter_babel_backend"
       ],
       "frontend": {
-        "entrypoint": "src/dfinity_reactJs_reactRouter_babel_assets/src/index.html"
+        "entrypoint": "src/dfinity_reactJs_reactRouter_babel_frontend/src/index.html"
       },
       "source": [
-        "src/dfinity_reactJs_reactRouter_babel_assets/assets",
-        "dist/dfinity_reactJs_reactRouter_babel_assets/"
+        "src/dfinity_reactJs_reactRouter_babel_frontend/assets",
+        "dist/dfinity_reactJs_reactRouter_babel_frontend/"
       ],
       "type": "assets"
     }
