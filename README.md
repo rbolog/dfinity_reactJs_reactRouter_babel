@@ -82,8 +82,8 @@ Copy from repo. or adapt files in `/src/dfinity_reactJs_reactRouter_babel_fronte
 ## Recipe to create the project using template
 
 1. Create and clone project from Github
-1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**__assets_ with your <project name\>
-1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel**/_ with your <project name\>
+1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel_frontend**_ with your <project name\>
+1. Rename folder _/src/**dfinity_reactJs_reactRouter_babel_backend**_ with your <project name\>
 1. Update name and description in **package.json**
 1. Update **dfx.json** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
 1. Update **webpack.config.js** search for _**dfinity_reactJs_reactRouter_babel**_ and replace with your <project name\>
