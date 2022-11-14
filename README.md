@@ -1,3 +1,6 @@
+> **Warning**
+> This project is no longer maintained and is replaced by [dfx_base](https://gitlab.com/kurdy/dfx_base) 
+
 # dfinity_reactJs_reactRouter_babel
 
 A recipe,template that includes Dfinity, ReactJS, React-Router.
